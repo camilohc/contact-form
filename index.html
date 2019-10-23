@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Form</title>
+    <style>
+        * {
+            font-family: Helvetica;
+            margin-top: 10px;
+            text-align: justify;
+        }
+        label {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<h1>Contact Form</h1>
+<form action="registry">
+    <div id="form">
+        <label for="firstName">First Name </label>
+        <input type="text" id="firstName" placeholder="Enter your Name" required>
+        <br>
+        <label for="lastName">Last Name </label>
+        <input type="text" id="lastName" placeholder="Enter your last name" required>
+        <br>
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+        <br>
+        <label for="country">Country</label>
+        <select name="country" id="country">
+            <option value="colombia">Colombia</option>
+            <option value="argentina">Argentina</option>
+            <option value="spain">Spain</option>
+        </select>
+        <br>
+        <label for="career" id="career">Career</label>
+        <br>
+        <input type="radio" name="career" value="ux/ui">UX/UI
+        <br>
+        <input type="radio" name="career" value="data-science">Data Science
+        <br>
+        <input type="radio" name="career" value="full-stack">Full Stack Web Development
+        <br>
+        <label for="mode" id="mode">Mode</label>
+        <br>
+        <input type="radio" value="presential">Presential
+        <input type="radio" value="online">Online
+        <br>
+        <label for="work" id="work">Are you currently working?</label>
+        <br>
+        <input type="radio" name="work" value="Yes">Yes
+        <input type="radio" name="work" value="no">No
+        <br>
+        <label for="phone" id="phone">Phone number</label>
+        <input type="text" placeholder="+123456789">
+        <br>
+        <label for="personal-description">Personal Description</label>
+        <br>
+        <textarea name="personal-description" id="personal-description" cols="30" rows="5" maxlength="300"
+                  placeholder="(300 characters maximum)"></textarea>
+        <br>
+        <input type="submit">
+        <input type="Reset">
+    </div>
+</form>
+</body>
+</html>
